@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4B3D26A-81E8-4BE8-B11A-3F546F517325}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ks1Software</RootNamespace>
+    <AssemblyName>Ks1Software</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdditionQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdditionQuiz.Designer.cs">
+      <DependentUpon>AdditionQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DivisionQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DivisionQuiz.Designer.cs">
+      <DependentUpon>DivisionQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MathsHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathsHome.Designer.cs">
+      <DependentUpon>MathsHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MathsQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathsQuiz.Designer.cs">
+      <DependentUpon>MathsQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiplicationQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiplicationQuiz.Designer.cs">
+      <DependentUpon>MultiplicationQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubtractionQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubtractionQuiz.Designer.cs">
+      <DependentUpon>SubtractionQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextEditor.Designer.cs">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheInternet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheInternet.Designer.cs">
+      <DependentUpon>TheInternet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdditionQuiz.resx">
+      <DependentUpon>AdditionQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DivisionQuiz.resx">
+      <DependentUpon>DivisionQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathsHome.resx">
+      <DependentUpon>MathsHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathsQuiz.resx">
+      <DependentUpon>MathsQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiplicationQuiz.resx">
+      <DependentUpon>MultiplicationQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SubtractionQuiz.resx">
+      <DependentUpon>SubtractionQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextEditor.resx">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheInternet.resx">
+      <DependentUpon>TheInternet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maths.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maths.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internet.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\English.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MathsQuiz.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon boy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boy page 1.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackArrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Divide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus-Symbol-Transparent-Images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-line-illustration-png-clip-art.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1525695-minus-png-minus-png-1600_1600_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftArrow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PencilIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MathOwl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftArrow3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speech.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
